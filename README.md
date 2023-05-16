@@ -15,10 +15,6 @@ sizes, from mobile to desktop.
 - Error Handling
 - Web accessible with right color contrast ratio 
 
-## Screen recording of customer using the app
-
-## Screen recording using only keyboard navigation
-
 # View  
 - Find deployed project on vercel: https://movie-database-interface.vercel.app/
 
