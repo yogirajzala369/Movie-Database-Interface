@@ -13,7 +13,7 @@ movie card displays the movie poster, title, release date, and rating.
 sizes, from mobile to desktop.
 - Visual Effects: hover effects, loading spinners 
 - Error Handling
-- Web accessible with right color contrast ratio 
+- Web accessible with complete keyboard and screenreader compatibility with right color contrast ratio 
 
 # View  
 - Find deployed project on vercel: https://movie-database-interface.vercel.app/
