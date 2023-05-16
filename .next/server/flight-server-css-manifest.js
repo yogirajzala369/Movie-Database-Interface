@@ -8,6 +8,7 @@ self.__RSC_CSS_MANIFEST={
     ]
   },
   "cssModules": {
-    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/page": []
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/page": [],
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/[movieId]/page": []
   }
 }

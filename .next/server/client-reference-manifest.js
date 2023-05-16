@@ -741,6 +741,110 @@ self.__RSC_MANIFEST={
         ],
         "async": false
       }
+    },
+    "(app-client)/./app/layout.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/layout.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/layout.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/layout.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/MovieList.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/MovieList.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/MovieList.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/MovieList.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/[movieId]/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/[movieId]/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/[movieId]/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/[movieId]/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+        ],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
@@ -2439,6 +2543,126 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/layout.tsx": {
+      "id": "(app-client)/./app/layout.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/layout.tsx#": {
+      "id": "(app-client)/./app/layout.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/layout.tsx#default": {
+      "id": "(app-client)/./app/layout.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/components/MovieList.tsx": {
+      "id": "(app-client)/./components/MovieList.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/components/MovieList.tsx#": {
+      "id": "(app-client)/./components/MovieList.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/components/MovieList.tsx#default": {
+      "id": "(app-client)/./components/MovieList.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/node_modules/next/dist/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/node_modules/next/dist/esm/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/node_modules/next/dist/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/node_modules/next/dist/esm/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/[movieId]/page.tsx": {
+      "id": "(app-client)/./app/[movieId]/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/[movieId]/page.tsx#": {
+      "id": "(app-client)/./app/[movieId]/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/yogirajsinhzala/workspace/game-on/Movie-Database-Interface/app/[movieId]/page.tsx#default": {
+      "id": "(app-client)/./app/[movieId]/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/[movieId]/page:static/chunks/app/[movieId]/page.js"
       ],
       "async": false
     }

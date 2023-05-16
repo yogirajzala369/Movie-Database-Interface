@@ -16,12 +16,11 @@ import {
   List,
   ListItem,
   UnorderedList,
-  Center,
-  Spinner,
 } from "@chakra-ui/react";
 import { ErrorPage } from "@/components/ErrorPage";
 import Link from "next/link";
 import { Link as ChakraLink } from "@chakra-ui/react";
+import LoadingSpinner from "@/components/LoadingSpinner";
 
 interface pageProps {
   params: { movieId: number };
@@ -33,6 +32,21 @@ export default function page({ params }: pageProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [movieDetails, setMovieDetails] = useState<MovieDetails>();
   const [error, setError] = useState("");
+  const crewRoles = [
+    "Directors",
+    "Assistant Director Trainee",
+    "Producer",
+    "Executive Producers",
+  ];
+
+  const movieCrewInfo = (field: string) => {
+    return (
+      movieCrew
+        ?.filter((crew: Crew) => crew.job === field)
+        .map((crew: Crew) => crew.name)
+        .join(", ") || "-"
+    );
+  };
 
   useEffect(() => {
     const fetchDetails = async () => {
@@ -66,15 +80,7 @@ export default function page({ params }: pageProps) {
   return (
     <>
       {isLoading ? (
-        <Center h="100vh">
-          <Spinner
-            thickness="4px"
-            speed="0.65s"
-            emptyColor="gray.200"
-            color="blue.500"
-            size="xl"
-          />
-        </Center>
+        <LoadingSpinner />
       ) : error ? (
         <ErrorPage error={error} />
       ) : (
@@ -172,47 +178,18 @@ export default function page({ params }: pageProps) {
                   </Text>
                   <SimpleGrid columns={1} spacing={4}>
                     <List spacing={2}>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"}>
-                          Directors:
-                        </Text>{" "}
-                        {movieCrew
-                          ?.filter((crew: Crew) => crew.job === "Director")
-                          .map((crew: Crew) => crew.name)
-                          .join(", ")}
-                      </ListItem>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"}>
-                          Assistant Director Trainee:
-                        </Text>{" "}
-                        {movieCrew
-                          ?.filter(
-                            (crew: Crew) =>
-                              crew.job === "Assistant Director Trainee"
-                          )
-                          .map((crew: Crew) => crew.name)
-                          .join(", ") || "-"}
-                      </ListItem>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"}>
-                          Producers:
-                        </Text>{" "}
-                        {movieCrew
-                          ?.filter((crew: Crew) => crew.job === "Producer")
-                          .map((crew: Crew) => crew.name)
-                          .join(", ")}
-                      </ListItem>
-                      <ListItem>
-                        <Text as={"span"} fontWeight={"bold"}>
-                          Executive Producers:
-                        </Text>{" "}
-                        {movieCrew
-                          ?.filter(
-                            (crew: Crew) => crew.job === "Executive Producer"
-                          )
-                          .map((crew: Crew) => crew.name)
-                          .join(", ")}
-                      </ListItem>
+                      <>
+                        {crewRoles.map((role: string) => {
+                          return (
+                            <ListItem>
+                              <Text as={"span"} fontWeight={"bold"}>
+                                {role}:
+                              </Text>{" "}
+                              {movieCrewInfo(role)}
+                            </ListItem>
+                          );
+                        })}
+                      </>
                     </List>
                   </SimpleGrid>
                 </Box>

@@ -2,11 +2,9 @@
 import { useState, useEffect } from "react";
 import {
   Flex,
-  Center,
   Input,
   InputGroup,
   InputLeftElement,
-  Spinner,
   Button,
   Heading,
 } from "@chakra-ui/react";
@@ -14,6 +12,7 @@ import { SearchIcon } from "@chakra-ui/icons";
 import { MovieCard } from "./MovieCard";
 import { Movie } from "./types";
 import { ErrorPage } from "./ErrorPage";
+import LoadingSpinner from "./LoadingSpinner";
 
 export default function MovieList() {
   const [movies, setMovies] = useState([]);
@@ -39,15 +38,7 @@ export default function MovieList() {
   return (
     <>
       {isLoading ? (
-        <Center h="100vh">
-          <Spinner
-            thickness="4px"
-            speed="0.65s"
-            emptyColor="gray.200"
-            color="blue.500"
-            size="xl"
-          />
-        </Center>
+        <LoadingSpinner />
       ) : error ? (
         <ErrorPage error={error} />
       ) : (
