@@ -1,3 +1,5 @@
+import MovieList from "@/components/MovieList";
+
 export default function Home() {
-  return <div>Welcome to Movie Database Interface</div>;
+  return <MovieList />;
 }
